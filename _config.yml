@@ -3,3 +3,22 @@ description: Focused apps, small games, and practical tools.
 markdown: kramdown
 theme: minima
 show_downloads: false
+
+# Minima theme customization
+minima:
+  skin: dark
+  social_links:
+    - platform: email
+      url: "mailto:support@qqa.nl"
+
+# Brand colors
+brand:
+  primary: "#E16A2E"
+  background: "#0B0D10"
+  text: "#F2F4F7"
+  text_muted: "#9CA3AF"
+
+# Site settings
+url: "https://qqa.nl"
+baseurl: ""
+author: "QQA Labs"

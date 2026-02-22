@@ -1,0 +1,246 @@
+/* QQA Labs Custom Styles - Brand Colors */
+:root {
+  --brand-primary: #E16A2E;
+  --brand-background: #0B0D10;
+  --brand-text: #F2F4F7;
+  --brand-text-muted: #9CA3AF;
+  --brand-border: #2D3139;
+}
+
+/* Dark theme overrides */
+body {
+  background-color: var(--brand-background);
+  color: var(--brand-text);
+}
+
+.site-header {
+  background-color: var(--brand-background);
+  border-bottom: 1px solid var(--brand-border);
+}
+
+.site-title, .site-title:visited {
+  color: var(--brand-text);
+}
+
+.site-nav .page-link {
+  color: var(--brand-text-muted);
+}
+
+.site-nav .page-link:hover {
+  color: var(--brand-primary);
+}
+
+/* Logo styling */
+.site-logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+/* Override link colors */
+a {
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #C85A24;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--brand-text);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--brand-primary);
+  display: inline-block;
+}
+
+/* Content wrapper */
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Home page hero */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(180deg, rgba(11, 13, 16, 0) 0%, rgba(230, 106, 46, 0.05) 100%);
+  border-radius: 12px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero .tagline {
+  font-size: 1.25rem;
+  color: var(--brand-text-muted);
+  margin-bottom: 2rem;
+}
+
+/* Values section */
+.values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.value-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--brand-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: border-color 0.2s ease;
+}
+
+.value-card:hover {
+  border-color: var(--brand-primary);
+}
+
+.value-card h3 {
+  color: var(--brand-primary);
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.value-card p {
+  color: var(--brand-text-muted);
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* Links section */
+.links-section {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--brand-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #C85A24;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--brand-text);
+  border: 1px solid var(--brand-border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--brand-primary);
+  color: var(--brand-primary);
+  text-decoration: none;
+}
+
+/* Contact section */
+.contact {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-top: 1px solid var(--brand-border);
+}
+
+.contact h2 {
+  border: none;
+  display: block;
+}
+
+/* Product cards */
+.product-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--brand-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-card h3 {
+  margin-top: 0;
+  color: var(--brand-text);
+}
+
+.product-card .status {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: rgba(230, 106, 46, 0.15);
+  color: var(--brand-primary);
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--brand-background);
+  border-top: 1px solid var(--brand-border);
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+.site-footer p {
+  color: var(--brand-text-muted);
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .site-logo-img {
+    height: 30px;
+  }
+  
+  .values {
+    grid-template-columns: 1fr;
+  }
+  
+  .links-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+}

@@ -1,21 +1,48 @@
 ---
 title: Products
+layout: default
 ---
 
 # Products
 
 Everything published by QQA Labs.
 
-## Sudoku Pocket (in development)
-- Platforms: iOS + Android
-- Highlights: notes/pencil marks, daily puzzle, stats, themes, premium unlock
-- Status: MVP built, release pipeline next
+<div class="product-card">
+  <h3>Sudoku Pocket</h3>
+  <span class="status">In Development</span>
+  
+  <p>A clean, focused Sudoku app for iOS and Android.</p>
+  
+  <h4>Highlights</h4>
+  <ul>
+    <li>Notes/pencil marks</li>
+    <li>Daily puzzle challenge</li>
+    <li>Statistics tracking</li>
+    <li>Multiple themes</li>
+    <li>Premium unlock</li>
+  </ul>
+  
+  <p><strong>Status:</strong> MVP built, release pipeline next.</p>
+  
+  <p>Want early access? Email <strong>hello@qqa.nl</strong></p>
+</div>
 
-> Want early access? Email **hello@qqa.nl**.
+## Roadmap
 
-## Roadmap (high-level)
-- More “pocket” puzzles (small, clean, offline-first)
-- Practical utilities you’ll actually use (no accounts, no spam)
+<div class="values">
+  <div class="value-card">
+    <h3>More "Pocket" Puzzles</h3>
+    <p>Small, clean, offline-first puzzle games. One focus, done right.</p>
+  </div>
+  
+  <div class="value-card">
+    <h3>Practical Utilities</h3>
+    <p>Tools you'll actually use. No accounts, no spam, no bloat.</p>
+  </div>
+</div>
 
-## Links
-- Website: qqa.nl
+---
+
+<p style="text-align: center; color: var(--brand-text-muted);">
+  <a href="/">← Back to Home</a>
+</p>
